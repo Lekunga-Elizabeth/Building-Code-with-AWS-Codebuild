@@ -1,0 +1,21 @@
+## Lab Environment Setup
+
+* Ensure you have an AWS account with the necessary permissions to 
+* create and manage CodeBuild resources.
+* Create an IAM role for CodeBuild with the required permissions. To achieve this do the following:
+    - Open your AWS console 
+    - Go to "IAM Service"
+    - click on "role" on the left hand side
+    - Click on create role
+    - Under trusted entity type select "AWS service"
+    - Select "EC2" as the use case 
+    - Select "codebuild" in the drop down box for use cases
+    
+
+* Set up the necessary IAM policies for the CodeBuild IAM role.
+    - Attach the policy called the "AWSCodeBuildAminAccess" Permision to the role 
+    - Add the "role name" 
+    - Add tags under the key "enter key" and "key value"
+    - Finally click on create role
+
+*
